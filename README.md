@@ -1,1 +1,1 @@
-# Django-Ultimate_Blog_App
+# Django-Ultimate Blog App
