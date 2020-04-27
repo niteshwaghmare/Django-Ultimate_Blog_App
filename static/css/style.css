@@ -1,0 +1,21 @@
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css";
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  background-color: #343A40;
+}
+
+.footer p{
+    padding-top: 20px;
+    color: #ffffff;
+}
+/* Other Classes for Page Styling */
