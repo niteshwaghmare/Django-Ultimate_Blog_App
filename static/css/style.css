@@ -11,11 +11,16 @@ body {
 
 #sticky-footer {
   flex-shrink: none;
-  background-color: #343A40;
+  background-color: #343a40;
 }
 
-.footer p{
-    padding-top: 20px;
-    color: #ffffff;
+.footer p {
+  padding-top: 20px;
+  color: #ffffff;
 }
 /* Other Classes for Page Styling */
+
+#blog_post {
+  margin: 100px auto;
+  width: 60%;
+}
