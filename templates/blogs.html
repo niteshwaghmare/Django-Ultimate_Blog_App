@@ -1,21 +1,20 @@
 {% extends 'base.html' %} {% block content %}
-<div id="blog_list" class="container">
-  {% for blog in blogs %}
-  <div class="jumbotron">
-    <h1 class="display-4">{{blog.title}}</h1>
-    <p class="lead">{{blog.content}}</p>
-    <hr class="my-4" />
-    <p>by {{blog.author}}</p>
-    <p class="lead">
-      <a
-        class="btn btn-primary btn-lg"
-        href="{% url 'blog_post' blog.slug %}"
-        role="button"
-        >Learn more</a
-      >
-    </p>
+
+<div class="container">
+  <div class="blog-list">
+    <div class="row">
+      {% for blog in blogs %}
+      <a href="{% url 'blog_post' blog.slug %}" id="blog" class="blog col-md-4">     
+        <div class="img">
+          <img src="{{ blog.image.url }}" height="200px" width="100%" alt=""> 
+        </div>
+        <p>By {{blog.author}} on {{blog.created_on}}</p>
+        <h3>{{blog.title}}</h3>
+      </a>
+      {% endfor %} 
+    </div>
   </div>
-  {% endfor %} {% if is_paginated %} {% include "includes/pagination.html" %} {%
-  endif %}
+  {% if is_paginated %} {% include "includes/pagination.html" %} {%endif %}
+  
 </div>
 {% endblock %}
