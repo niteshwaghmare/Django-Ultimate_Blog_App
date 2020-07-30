@@ -22,7 +22,7 @@ body {
 
 .blog-post{
   margin: 50px auto;
-  width: 60%;
+  width: 70%;
 }
 
 .blog-post img{
@@ -39,6 +39,7 @@ body {
 
 .blog-content{
   text-decoration: lavender;
+  padding-top: 20px;
 }
 
 .blog-list{
@@ -46,6 +47,15 @@ body {
   min-height: 70vh;
 }
 
+.author, .date{
+  margin: 5px 0px; 
+}
+.author{
+
+}
+.date{
+  color: #949494;
+}
 #blog{
   margin: 20px 0px;
   padding: 25px;

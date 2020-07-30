@@ -4,8 +4,12 @@
 <div class="container">
   <div class="blog-post">
     <h1 class="blog-heading">{{blog.title}}</h1>
+    <div>
+      <p class="author"><b>Written by: </b>{{ blog.author.first_name }} {{ blog.author.last_name}}</p>
+      <p class="date"><b>On: </b> {{ blog.created_on.date }} * {{blog.get_read_time}}</p>
+    </div>
     <img src="{{blog.image.url}}" alt="">
-    <em class="blog-content">{{blog.content}}</em>
+    <p class="blog-content">{{blog.get_content_as_markdown}}</p>
   </div>
 </div>
 {% endblock %}
